@@ -10,14 +10,22 @@ const headerLogo = document.createElement('img')
 headerLogo.src = '/logo.png'
 headerLogo.className = 'logo'
 
+const headerTitleWrapper = document.createElement('div')
 const headerTitle = document.createElement('h1')
-headerTitle.textContent = 'Social Responsibility Index'
+headerTitle.textContent = 'LobbyLens'
+
+const headerDesc = document.createElement('span')
+headerDesc.textContent = 'A tool to track lobbying efforts of companies.'
 
 headerLeft.appendChild(headerLogo)
-headerLeft.appendChild(headerTitle)
+headerTitleWrapper.appendChild(headerTitle)
+headerTitleWrapper.appendChild(headerDesc)
+headerLeft.appendChild(headerTitleWrapper)
 
 const headerRight = document.createElement('div')
 headerRight.className = 'header-right'
+
+
 
 const headerButton = document.createElement('button')
 headerButton.textContent = 'Home'
