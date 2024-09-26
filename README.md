@@ -23,10 +23,6 @@ The following **optional** features are implemented:
 
 - [x] The web app displays items in a unique format, such as cards rather than lists
 
-The following **additional** features are implemented:
-
-- [] List anything else that you added to improve the site's functionality!
-
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
