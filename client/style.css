@@ -1,38 +1,48 @@
 /* Root Styles CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   background-color: white;
   font-family: Avenir, Helvetica, sans-serif;
-  color: black;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1666706565326-3a782f69b54e?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
 }
 
 /* Header CSS */
+
+header {
+  background-image: url("https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+}
 .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  height: 400px;
   overflow: hidden;
-  padding: 20px 10px;
-  padding-bottom: 60px;
+  border-bottom: 2px solid rgb(66, 74, 89);
+  text-align: center;
 }
 
 .header-left {
-  float: left;
-  height: 100px;
-  width: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around
 }
 
 .header-left img {
-  padding-top: 8px;
-  height: 80px;
-}
-
-.header-left h1 {
-  float: right;
-  font-size: 45px;
-  
+ height: 100px;
 }
 
 .header-right {
-  float: right;
-  padding-top:30px;
-  padding-right:10px;
+  padding-top: 25px;
 }
 
 .header-right button {
@@ -54,11 +64,12 @@ width: 80px;
 
 /* Home page CSS */
 
-main {
+.card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 2rem;
 }
 
 .card {
@@ -102,8 +113,9 @@ main {
 }
 
 .bottom-container a {
-  color: rgb(228, 16, 133);
+  color: rgb(164, 208, 147);
   text-decoration: none;
+  font-weight: 600;
 }
 
 /* 404 Page CSS */
@@ -136,14 +148,16 @@ main {
 
 /* Detail Page CSS*/
 
-.gift-info {
+.company-content {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .image-container {
   padding-left: 100px;
-  width: 40vw;
+  width: 20vw;
 }
 
 .image-container img {

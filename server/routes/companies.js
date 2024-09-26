@@ -12,7 +12,11 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:companyId', (req, res) => {
-    res.status(200).sendFile(path.resolve(__dirname, '../public/company.html'))
+    res.status(200).sendFile(path.resolve(__dirname, '../public/companyDetail.html'))
+})
+
+router.get('*', (req, res) => {
+    res.status(404).sendFile(path.resolve(__dirname, '../public/error.html'))
 })
 
 export default router;
