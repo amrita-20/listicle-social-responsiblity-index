@@ -10,17 +10,22 @@ const headerLogo = document.createElement('img')
 headerLogo.src = '/logo.png'
 headerLogo.className = 'logo'
 
+const headerTitleWrapper = document.createElement('div')
 const headerTitle = document.createElement('h1')
 headerTitle.textContent = 'LobbyLens'
 
+const headerDesc = document.createElement('span')
+headerDesc.textContent = 'A tool to track lobbying efforts of companies.'
+
 headerLeft.appendChild(headerLogo)
-headerLeft.appendChild(headerTitle)
+headerTitleWrapper.appendChild(headerTitle)
+headerTitleWrapper.appendChild(headerDesc)
+headerLeft.appendChild(headerTitleWrapper)
 
 const headerRight = document.createElement('div')
 headerRight.className = 'header-right'
 
-const headerDesc = document.createElement('p')
-headerDesc.textContent = 'Uncover the truth behind corporate influence—explore company ethics and lobbying at a glance'
+
 
 const headerButton = document.createElement('button')
 headerButton.textContent = 'Home'
@@ -33,6 +38,5 @@ headerRight.appendChild(headerButton)
 
 headerContainer.appendChild(headerLeft)
 headerContainer.appendChild(headerRight)
-headerContainer.appendChild(headerDesc)
 
 header.appendChild(headerContainer)
