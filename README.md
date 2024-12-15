@@ -1,6 +1,6 @@
 ## LobbyLens
 
-About this web app: **LobbyLen is web application built using HTML, CSS, JavaScript and Node.js.This web application serves as an informative platform where users can explore the social responsibility and lobbying behaviors of companies in a simple, structured, and visually appealing manner.
+About this web app: LobbyLen is web application built using HTML, CSS, JavaScript and Node.js.This web application serves as an informative platform where users can explore the social responsibility and lobbying behaviors of companies in a simple, structured, and visually appealing manner.
 
 ## Features
 
