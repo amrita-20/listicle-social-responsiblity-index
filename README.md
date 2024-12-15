@@ -17,11 +17,6 @@ Here's a walkthrough of implemented required features:
 
 URL :  https://imgur.com/XMcLLTK
 
-## Notes
-
-One challenge I encountered during development was a data mismatch issue between the server and client. Specifically, the id field in the server’s JSON response was stored as a string, while on the client-side, I was attempting to compare it against an id that was treated as a number data type. This led to failed comparisons and unexpected behavior.
-
-After debugging, I identified the root cause as the type mismatch between the id values. To resolve the issue, I ensured that both the server and client were consistently handling the id as a number during comparisons, which ultimately fixed the problem and allowed the data to be processed correctly.
 
 ## License
 
